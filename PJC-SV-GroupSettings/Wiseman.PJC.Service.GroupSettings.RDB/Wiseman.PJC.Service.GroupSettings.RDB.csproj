@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Globals">
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+  <!--DevOps-->
+  <PropertyGroup>
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+    <Deterministic>true</Deterministic>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <DebugType>portable</DebugType>
+	<EnableSourceControlManagerQueries>false</EnableSourceControlManagerQueries>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.AzureRepos.Git" Version="1.1.1" PrivateAssets="All" />
+  </ItemGroup>
+  <PropertyGroup>
+    <!-- Nuget -->
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>$(AssemblyName)</Title>
+    <AssemblyVersion>0.1.0</AssemblyVersion>
+    <FileVersion>$(AssemblyVersion)</FileVersion>
+    <Description>$(AssemblyName)</Description>
+    <Version>0.1.0</Version>
+    <Copyright>Copyright © 2017</Copyright>
+    <Authors>WISEMAN CO.LTD.</Authors>
+    <PackageReleaseNotes>新規作成</PackageReleaseNotes>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Wiseman.PJC.Gen2.RDB" Version="0.1.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Wiseman.PJC.Service.GroupSettings.Http\Wiseman.PJC.Service.GroupSettings.Http.csproj" />
+  </ItemGroup>
+</Project>

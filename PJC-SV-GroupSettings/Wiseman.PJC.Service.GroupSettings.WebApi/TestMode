@@ -1,0 +1,4 @@
+﻿# このファイルはアプリケーション実行パスに配置すると構成ファイル情報クラス
+# Wiseman.PJC.Gen2.Setting.Server.Options.FrameworkOptionへのアクセスが記録されます
+# 構成ファイルの設定状況の確認に利用できます。
+# Linux VMにデプロイ後はnginxから書き込みできるように権限を変更してください

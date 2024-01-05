@@ -1,0 +1,10 @@
+{
+  // 常に使用されるKestrel構成ファイルです。
+  // 環境によって変更されることのないタイムアウト設定などを設定します。
+  "Kestrel": {
+    "Limits": {
+      "MaxRequestHeaderCount": 200,
+      "KeepAliveTimeout": "0.00:02:00"
+    }
+  }
+}
