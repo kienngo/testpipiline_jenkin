@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-				sh 'dotnet build %WORKSPACE%\\PJC-SV-GroupSettings\\Wiseman.PJC.Service.GroupSettings.sln --configuration Release' 
+				bat 'dotnet build %WORKSPACE%\\PJC-SV-GroupSettings\\Wiseman.PJC.Service.GroupSettings.sln --configuration Release' 
             }
         }
     }
